@@ -4,7 +4,7 @@ const port = 6060;
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  res.send('index.ejs');
+  res.render('index.ejs');
 });
 
 app.get('/the_prophecies_begin', (req, res) => {
