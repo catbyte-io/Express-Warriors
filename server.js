@@ -10,7 +10,7 @@ nunjucks.configure('views', {
 });
 
 app.get('/', (req, res) => {
-  res.render('index.html');
+  res.render('base.html');
 });
 
 app.get('/the_prophecies_begin', (req, res) => {
