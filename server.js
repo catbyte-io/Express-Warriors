@@ -2,11 +2,6 @@
 const express = require('express');
 const app = express();
 
-// Use bootstrap and custom css
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import './public/styles.css';
-
 // Configure app to use nunjucks for templating
 const nunjucks = require('nunjucks');
 
