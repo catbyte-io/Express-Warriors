@@ -1,10 +1,16 @@
 const express = require('express');
 const app = express();
 const port = 6060;
-app.set('view engine', 'ejs');
+
+const nunjucks = require('nunjucks');
+
+nunjucks.configure('views', {
+  autoescape: true,
+  express: app
+});
 
 app.get('/', (req, res) => {
-  res.render('index.ejs');
+  res.render('index.html');
 });
 
 app.get('/the_prophecies_begin', (req, res) => {
