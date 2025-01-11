@@ -8,10 +8,13 @@ const apiKey = config.apiKey;
 axios.defaults.baseURL = "https://api.thecatapi.com/v1/"
 axios.defaults.headers.common['x-api-key'] = apiKey;
 
-// Map characters to breed
-const characterToBreed = {
-  'fireheart': 'Abyssinian'
-};
+
+// Warrior cats character data
+const characters = [
+  { name: 'Fireheart', link: '/fireheart', breed: 'Abyssinian'},
+  { name: 'Bluestar', link: '/bluestar'},
+  { name: 'Graystripe', link: '/graystripe'}
+];
 
 async function getBreed(breed) {
     try {
