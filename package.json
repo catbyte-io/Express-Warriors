@@ -1,6 +1,7 @@
 {
   "name": "express-warriors",
   "version": "1.0.0",
+  "type": "module",
   "description": "An Express app for viewing breeds of Warrior cats",
   "main": "index.js",
   "scripts": {
@@ -12,9 +13,23 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
     "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "nunjucks": "^3.2.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "postcss-loader": "^8.1.1",
+    "sass": "^1.83.1",
+    "sass-loader": "^16.0.4",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
   }
 }
